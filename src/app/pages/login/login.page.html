@@ -1,6 +1,5 @@
 <ion-content class="swiper-no-swiping">
   <div class="container top">
-
     <ion-segment (ionChange)="segmentChanged($event)" mode="ios" value="login">
       <ion-segment-button mode="ios" value="login">
         <ion-label>Login</ion-label>
@@ -10,11 +9,16 @@
       </ion-segment-button>
     </ion-segment>
   </div>
+
+  
   <ion-slides>
 
     <ion-slide>
       <div class="slide-inner ion-padding">
         <span>Login</span>
+
+        
+          
 
         <ion-item class="ion-margin-top" lines="none">
           <ion-input type="email" placeholder="E-mail" [(ngModel)]="usuarioLogin.email">   </ion-input>
@@ -27,6 +31,12 @@
         <ion-button class="ion-margin-top" (click)="login()" color="light" expand="block">
           Entrar
         </ion-button>
+
+        <ion-button class="ion-margin-top" (click)="redefinir_senha()" color="light" expand="block">
+          redefinir senha
+        </ion-button>
+
+        
 
 
       </div>
@@ -52,6 +62,7 @@
         <ion-button class="ion-margin-top" (click)="register()" color="light" expand="block">
           Cadastrar
         </ion-button>
+
       </div>
     </ion-slide>
 

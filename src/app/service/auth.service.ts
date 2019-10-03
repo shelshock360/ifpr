@@ -27,5 +27,10 @@ export class AuthService {
     return this.afa.auth;
   }
 
+  redefinir_senha(usuario: Usuario) {
+
+    return this.afa.auth.sendPasswordResetEmail(usuario.email);
+  }
+
  
 }

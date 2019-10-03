@@ -20,13 +20,14 @@ import { AngularFireAuthModule } from '@angular/fire/auth';
   imports: [BrowserModule, IonicModule.forRoot(), AppRoutingModule,AngularFireDatabaseModule, AngularFirestoreModule,
     FormsModule, AngularFireAuthModule,
     AngularFireModule.initializeApp({
-      apiKey: "AIzaSyAxrBqIzMMnypU_5ceDuXVP6kymwGA-2vY",
-      authDomain: "vans-dd8a5.firebaseapp.com",
-      databaseURL: "https://vans-dd8a5.firebaseio.com",
-      projectId: "vans-dd8a5",
-      storageBucket: "",
-      messagingSenderId: "556294629822",
-      appId: "1:556294629822:web:98d003ac256436a7"
+    apiKey: "AIzaSyAiwB64M4yQxSx73PEddeUa1RIksFgYXtc",
+    authDomain: "ifpr-bac42.firebaseapp.com",
+    databaseURL: "https://ifpr-bac42.firebaseio.com",
+    projectId: "ifpr-bac42",
+    storageBucket: "ifpr-bac42.appspot.com",
+    messagingSenderId: "11868818095",
+    appId: "1:11868818095:web:bee7b4bd8d44cb6c89e25a",
+    measurementId: "G-G0KM18JQJR"
 
     }),
 

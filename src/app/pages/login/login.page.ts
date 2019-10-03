@@ -75,6 +75,23 @@ export class LoginPage implements OnInit {
 
   }
 
+
+
+  async redefinir_senha() {
+    await this.presentLoading();
+    try {
+
+      await this.authService.redefinir_senha(this.usuarioLogin);
+    } catch (error) {
+
+      this.presentToast(error.message);
+    } finally {
+
+      this.loading.dismiss();
+    }
+
+  }
+
   async presentLoading() {
     this.loading = await this.loadingCtrl.create({ message: 'Aguarde...' });
     return this.loading.present();

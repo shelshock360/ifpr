@@ -4,14 +4,16 @@ export interface Aluno {
     telefone?: string;
     turma?: string;
     instrumento1?:string;
+    ano?:string;
     qtde1?:number;
     instrumento2?:string;
     qtde2?:number;
     horarioPedido?:string;
-    horarioDevolucao?:string;
+    horarioDevolucao?:number;
     perildo?: string;
     createdAt?: number;
     userId?: string;
 
+    
 
 }

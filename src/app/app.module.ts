@@ -14,10 +14,11 @@ import { AppRoutingModule } from './app-routing.module';
 import { FormsModule } from '@angular/forms';
 import { AngularFireAuthModule } from '@angular/fire/auth';
 
+
 @NgModule({
   declarations: [AppComponent],
   entryComponents: [],
-  imports: [BrowserModule, IonicModule.forRoot(), AppRoutingModule,AngularFireDatabaseModule, AngularFirestoreModule,
+  imports: [BrowserModule, IonicModule.forRoot(), AppRoutingModule, AngularFireDatabaseModule, AngularFirestoreModule,
     FormsModule, AngularFireAuthModule,
     AngularFireModule.initializeApp({
     apiKey: "AIzaSyAiwB64M4yQxSx73PEddeUa1RIksFgYXtc",

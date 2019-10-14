@@ -12,22 +12,59 @@
   <ion-list>
     <ion-item>
       <ion-input type="text"  [(ngModel)]="aluno.nome"  placeholder="Nome" ></ion-input>
+
     </ion-item>
     <ion-item>
       <ion-input type="text" [(ngModel)]="aluno.telefone"  placeholder="Telefone"></ion-input>
     </ion-item>
       <ion-item>
-        <ion-input type="text" [(ngModel)]="aluno.turma" placeholder="turma"></ion-input>
+          <ion-select [(ngModel)]="aluno.turma" placeholder="selecione turma">
+            <ion-select-option value="analise-sistemas">analise de sistemas </ion-select-option>
+            <ion-select-option value="licenciatura-quimica">licenciatura em quimica</ion-select-option>
+            <ion-select-option value="engenharia-eletrica">engenharia eletrica</ion-select-option>
+            <ion-select-option value="engenharia-software">engenharia de software</ion-select-option>
+            <ion-select-option value="eletromecanica">eletromecanica</ion-select-option>
+            <ion-select-option value="tec-informatica">tecnico informatica</ion-select-option>
+            <ion-select-option value="tec-mecatronica">tecnico mecatronica</ion-select-option>
+            <ion-select-option value="tec-agroindustria">tecnico industria</ion-select-option>
+              </ion-select>
       </ion-item>
+      
+    <ion-item>
+      <ion-select [(ngModel)]="aluno.ano" placeholder="ano">
+        <ion-select-option value="1°">1° </ion-select-option>
+        <ion-select-option value="2°">2°</ion-select-option>
+        <ion-select-option value="3°">3°</ion-select-option>
+        <ion-select-option value="4°">4°</ion-select-option>
+        <ion-select-option value="5°">5°</ion-select-option>
+      </ion-select>
+    </ion-item>
+      
+
+
       <ion-item>
-        <ion-input type="text"  [(ngModel)]="aluno.instrumento1"  placeholder="instrumento1"></ion-input>
+      <ion-select [(ngModel)]="aluno.instrumento1" placeholder="selecione instrumento">
+        <ion-select-option value="ping-pong">ping pong</ion-select-option>
+        <ion-select-option value="bolinha-pebolin">bolinha pepolin</ion-select-option>
+       <ion-select-option value="calculadora">calculadora</ion-select-option>
+        <ion-select-option value="chaves">chaves</ion-select-option>
+          <ion-select-option value="dicionario">dicionario</ion-select-option>
+          <ion-select-option value="instrumento-musical">instrumento musical</ion-select-option>
+      </ion-select>
       </ion-item>
 
       <ion-item>
         <ion-input type="number" [(ngModel)]="aluno.qtde1" placeholder="digite a quantidade de instrumentos"></ion-input>
       </ion-item>
         <ion-item>
-          <ion-input type="text"  [(ngModel)]="aluno.instrumento2"  placeholder="instrumento2"></ion-input>
+          <ion-select [(ngModel)]="aluno.instrumento2" placeholder="selecione instrumento">
+            <ion-select-option value="ping-pong">ping pong</ion-select-option>
+            <ion-select-option value="bolinha-pebolin">bolinha pepolin</ion-select-option>
+            <ion-select-option value="calculadora">calculadora</ion-select-option>
+            <ion-select-option value="chaves">chaves</ion-select-option>
+            <ion-select-option value="dicionario">dicionario</ion-select-option>
+            <ion-select-option value="instrumento-musical">instrumento musical</ion-select-option>
+          </ion-select>
         </ion-item>
 
         <ion-item>
@@ -35,9 +72,11 @@
         </ion-item>
 
         <ion-item>
-          <ion-input type="text" [(ngModel)]="aluno.horarioDevolucao" placeholder="horario de devolucao"></ion-input>
+          <ion-input type="time" [(ngModel)]="aluno.horarioDevolucao" placeholder="horario de devolucao"></ion-input>
         </ion-item>
   </ion-list>
+
+
 </ion-content>
 
 <ion-footer>

@@ -27,6 +27,7 @@ export class DetailsPage implements OnInit {
     private loadingCtrl: LoadingController,
     private authService: AuthService,
     private toastCtrl: ToastController
+   
   ) {
     this.alunoId = this.activatedRoute.snapshot.params['id'];
 
@@ -76,7 +77,11 @@ export class DetailsPage implements OnInit {
         this.loading.dismiss();
       }
     }
+
+
   }
+
+
 
 
 
